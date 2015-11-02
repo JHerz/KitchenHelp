@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Sniglet:800|Corben:700|Luckiest+Guy' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="kitchen.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" id="brand">Kitchen Help &nbsp;<span class="glyphicon glyphicon-cutlery"></span></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active" ><a href="#" id="home">Home</a></li>
+                        <li><a href="#about" id="info">About</a></li>
+                        <li><a href="#contact" id="contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="background"></div>
+            <div class="starter-template">
+                <h1 id='head'>Measurement Converter</h1>
+                <p id="lead" class="hidden-xs">Your handy-dandy kitchen companion!</p>
+                <div id="mainWrap" class="col-md-8 col-sm-9 col-xs-12"><div id="mainInner"><div id="homePageMain"><h3><span class='request'><span id="extraWords">I would like to </span>convert  </span><input type="text" id='firstNum'/> <select id="original">
+                                    <option>tsp</option>
+                                    <option>tbs</option>
+                                    <option>oz</option>
+                                    <option>cups</option>
+                                    <option>quarts</option>
+                                </select> <span class='request'>
+                                    into  </span><select id="into">
+                                    <option>tsp</option>
+                                    <option>tbs</option>
+                                    <option>oz</option>
+                                    <option>cups</option>
+                                    <option>quarts</option>
+                                </select></h3>
+                            <button type="button" id="submitButton">convert</button></div></div></div>
+                <div id="result" class="col-md-8 col-sm-9 col-xs-12"></div>
+            </div>
+        </div>
+
+        <script src="kitchen2.js"></script>
+
+    </body>
+</html>

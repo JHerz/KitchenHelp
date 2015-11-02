@@ -1,0 +1,229 @@
+.background{
+    background:url(kitchenPic.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+}
+
+#head{
+    font-family:Corben;
+    font-size:46px;
+    color:maroon;
+}
+
+#home,#info,#contact{color:#B95835;}
+    #brand, a#info:focus,a#contact:focus,a#home:focus{color:rgb(238,205,134);}
+
+  
+#lead{
+    font-family:sniglet;
+    font-size:28px;
+    color:#B95835;
+    margin-bottom: 16px;
+}
+input, select{
+    border-radius:6px;
+}
+input#firstNum {
+    padding: 10px;
+    width: 64px;
+    height: 36px;
+    font-size: 28px;
+    text-align: center;
+    font-family: Luckiest Guy;
+    color: maroon;
+    border: none;
+    margin-left: 10px;
+    margin-right: 14px;
+}
+
+a:focus{outline:none;}
+
+#mainWrap{
+    background-color: rgba(238,205,134,.38);
+    padding: 0 10px 20px 10px;
+    border-radius: 8px;
+    text-align:center;
+    margin-top: 20px;
+    
+}
+
+#mainInner{
+    padding-top: 1px;
+}
+
+#submitButton {
+   margin-top: 2%;
+   font-size: 1.5em;
+   padding: 5px;
+   width: 5.2em;
+   border-radius: 6px;
+   border:none;
+   color: white;
+   background-color: #5c4b63;
+}
+
+#submitButton:hover{opacity:.9}
+.rotate{
+-webkit-animation: roll .7s;
+         animation: roll .7s;}
+ //-webkit-transform: rotate(360deg);
+    //  -ms-transform: rotate(360deg);
+        //  transform: rotate(360deg);}
+
+#original{
+    margin-right:10px;
+}
+
+#into{
+    margin-left:10px;
+}
+
+#result{
+    background-color: rgba(238,205,134,.38);
+    padding: 0 10px 20px 10px;
+    border-radius: 8px;
+    text-align:center;
+    margin-top: 30px;
+    min-height: 112px;
+}
+.request{
+    /* color:maroon; */
+    font-size: 24px;
+    font-family: corben;
+}
+
+
+.error{
+    color:red;
+    font-weight:bold;
+    font-family:fantasy;
+    font-size:2.5em;
+    padding-top: 2%;
+}
+
+button:focus, input:focus, select:focus, .container li:focus{
+    outline: 0;
+}
+
+.navClickPage{
+    font-size: 1.5em;
+    padding-top: 3%;
+    font-family: corben;
+}
+
+@media (min-width: 768px){
+.container {
+    width: 1170px;}}
+
+#answer{
+  font-family: corben;
+  padding-top: 3%;
+}
+
+#navBarClicks{font-size:200px}
+
+@media(max-width:800px){
+    #head{font-size:40px;}
+    #lead{font-size: 26px;}
+    #infoPar{font-size: 1.2em;}
+}
+@media(max-width:710px){
+    #head{font-size:36px;
+          text-align: center;}
+    select{
+        font-size: 20px;
+    }
+    .request{
+        font-size: 22px;
+        line-height: 168%;
+    }
+
+    input#firstNum{
+         width: 40px;
+         height: 30px;
+         font-size: 22px;
+         padding: 0px;
+         margin-left: 6px;
+         margin-right: 6px;
+    }
+    
+    #original{margin:auto;}
+    #into{margin:auto;}
+}
+@media(max-width:611px){
+    #head{font-size:34px;
+          margin-bottom: 0px;
+          margin-top: 0px;}
+    
+    #submitButton{
+        width: 4.5em;
+    }
+   
+}
+@media(max-width:578px){
+    #head{font-size:28px;}
+     .navClickPage{font-size:1.1em;}
+    #answer h1{
+     /* color:red; */
+     font-size: 30px;
+    }
+}
+
+@media(max-width:558px){
+    #extraWords{display:none;}
+}
+@media(max-width:484px){
+    #head{font-size:26px;}
+    #submitButton{
+        width: 4.5em;
+                  border-radius: 15px;}
+    #result{margin-top:10px;}
+    .navClickPage{font-size: 0.9em;}
+    #mainWrap{margin-top: 4px;}
+    .navbar{margin-bottom:6px;}
+}
+
+.fadeIn{animation:fadeIn .5s 0s ease;}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+       visibility:hidden;
+    }
+to{
+    opacity:1;
+visibility:visible;
+}
+}
+     
+
+@-webkit-keyframes roll {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes roll {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }}
