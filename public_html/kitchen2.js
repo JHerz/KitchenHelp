@@ -148,7 +148,7 @@ $(function () {
                 $(this).addClass("rotate");
                 setTimeout(function () {
                     $("#result").empty();
-                    $("<div id='answer' class='fadeIn'><h1>" + $('input').val() + " " + $('#original option:selected').text() + " is equal to " + result + " " + $('#into option:selected').text() + "</h1></div>").appendTo('#result');
+                    $("<div id='answer' class='fadeIn'><h1>" + $('input').val() + " " + $('#original option:selected').text() + "  =  " + result + " " + $('#into option:selected').text() + "</h1></div>").appendTo('#result');
                 }, 400);
                 setTimeout(function () {
                     $("#submitButton").removeClass("rotate");
@@ -159,7 +159,7 @@ $(function () {
                 $(this).addClass("rotate");
                 setTimeout(function () {
                     $("#result").empty();
-                    $("<div id='answer' class='fadeIn'><h1>" + $('input').val() + " " + $('#original option:selected').text() + " is equal to " + result.toFixed(1) + " " + $('#into option:selected').text() + "</h1></div>").appendTo('#result');
+                    $("<div id='answer' class='fadeIn'><h1>" + $('input').val() + " " + $('#original option:selected').text() + "  =  " + result.toFixed(1) + " " + $('#into option:selected').text() + "</h1></div>").appendTo('#result');
                 }, 400);
                 setTimeout(function () {
                     $("#submitButton").removeClass("rotate");

@@ -30,20 +30,23 @@
     color:#B95835;
     margin-bottom: 16px;
 }
+h3{line-height:20px;line-height: 28px;}
+
+
 input, select{
     border-radius:6px;
 }
 input#firstNum {
     padding: 10px;
     width: 64px;
-    height: 36px;
-    font-size: 28px;
+    height: 42px;
     text-align: center;
     font-family: Luckiest Guy;
     color: maroon;
     border: none;
     margin-left: 10px;
     margin-right: 14px;
+    font-size: 1.416666em;
 }
 
 a:focus{outline:none;}
@@ -63,7 +66,7 @@ a:focus{outline:none;}
 
 #submitButton {
    margin-top: 2%;
-   font-size: 1.5em;
+   font-size: 1.8em;
    padding: 5px;
    width: 5.2em;
    border-radius: 6px;
@@ -97,7 +100,6 @@ a:focus{outline:none;}
     min-height: 112px;
 }
 .request{
-    /* color:maroon; */
     font-size: 24px;
     font-family: corben;
 }
@@ -140,30 +142,32 @@ button:focus, input:focus, select:focus, .container li:focus{
 @media(max-width:710px){
     #head{font-size:36px;
           text-align: center;}
-    select{
-        font-size: 20px;
-    }
+   // select{
+       // font-size: 20px;
+   // }
     .request{
-        font-size: 22px;
+        font-size: 26px;
         line-height: 168%;
     }
 
-    input#firstNum{
+   /* input#firstNum{
          width: 40px;
          height: 30px;
          font-size: 22px;
          padding: 0px;
          margin-left: 6px;
          margin-right: 6px;
-    }
+    }*/
     
     #original{margin:auto;}
     #into{margin:auto;}
 }
 @media(max-width:611px){
-    #head{font-size:34px;
-          margin-bottom: 0px;
-          margin-top: 0px;}
+    #head{
+          font-size:34px;
+          margin-bottom: 12px;
+          /* margin-top: 0px; */
+          }
     
     #submitButton{
         width: 4.5em;
@@ -183,7 +187,7 @@ button:focus, input:focus, select:focus, .container li:focus{
     #extraWords{display:none;}
 }
 @media(max-width:484px){
-    #head{font-size:26px;}
+    #head{font-size: 32px;}
     #submitButton{
         width: 4.5em;
                   border-radius: 15px;}
@@ -191,6 +195,12 @@ button:focus, input:focus, select:focus, .container li:focus{
     .navClickPage{font-size: 0.9em;}
     #mainWrap{margin-top: 4px;}
     .navbar{margin-bottom:6px;}
+    
+    #original{margin-right: 20px;}
+    #into{margin-left:20px;}
+    input#firstNum{margin-left: 20px;height: 62px;font-size: 1.4em;width: 25%;}
+    h3{line-height:60px;}
+    select{font-size: 30px;}
 }
 
 .fadeIn{animation:fadeIn .5s 0s ease;}
